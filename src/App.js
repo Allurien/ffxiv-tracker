@@ -1,6 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
 import Header from './components/header';
 import Links from './components/links';
+import Login from './components/login';
 import Splash from './components/splash';
 import Tasks from './components/tasks/tasks';
 import MasterTasks from './components/tasks/masterTasks';
@@ -13,6 +14,7 @@ function App() {
             <main>
                 <Switch>
                     <Route path="/" exact component={Splash} />
+                    <Route path="/login" exact component={Login} />
                     <Route path="/links" component={Links} />
                     <Route path="/tasks" component={Tasks} />
                     <Route path="/master-tasks" component={MasterTasks} />
